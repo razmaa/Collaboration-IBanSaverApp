@@ -1,0 +1,456 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		153B93522B4FBF81006D0F07 /* IBanSaverApp_CollaborationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153B93512B4FBF81006D0F07 /* IBanSaverApp_CollaborationApp.swift */; };
+		153B93562B4FBF84006D0F07 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 153B93552B4FBF84006D0F07 /* Assets.xcassets */; };
+		153B93592B4FBF84006D0F07 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 153B93582B4FBF84006D0F07 /* Preview Assets.xcassets */; };
+		153B936B2B4FC11A006D0F07 /* GenericNetworkManager in Frameworks */ = {isa = PBXBuildFile; productRef = 153B936A2B4FC11A006D0F07 /* GenericNetworkManager */; };
+		153B936D2B4FD28C006D0F07 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153B936C2B4FD28C006D0F07 /* LoginView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		153B934E2B4FBF81006D0F07 /* IBanSaverApp-Collaboration.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "IBanSaverApp-Collaboration.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		153B93512B4FBF81006D0F07 /* IBanSaverApp_CollaborationApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IBanSaverApp_CollaborationApp.swift; sourceTree = "<group>"; };
+		153B93552B4FBF84006D0F07 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		153B93582B4FBF84006D0F07 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		153B936C2B4FD28C006D0F07 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		153B934B2B4FBF81006D0F07 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				153B936B2B4FC11A006D0F07 /* GenericNetworkManager in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		153B93452B4FBF81006D0F07 = {
+			isa = PBXGroup;
+			children = (
+				153B93502B4FBF81006D0F07 /* IBanSaverApp-Collaboration */,
+				153B934F2B4FBF81006D0F07 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		153B934F2B4FBF81006D0F07 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				153B934E2B4FBF81006D0F07 /* IBanSaverApp-Collaboration.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		153B93502B4FBF81006D0F07 /* IBanSaverApp-Collaboration */ = {
+			isa = PBXGroup;
+			children = (
+				153B935F2B4FBF98006D0F07 /* App */,
+				153B93602B4FBFC4006D0F07 /* Models */,
+				153B93612B4FBFF3006D0F07 /* Screens */,
+				153B93662B4FC041006D0F07 /* Components */,
+				153B93672B4FC053006D0F07 /* Extensions */,
+				153B93682B4FC06A006D0F07 /* Resources */,
+				153B93572B4FBF84006D0F07 /* Preview Content */,
+			);
+			path = "IBanSaverApp-Collaboration";
+			sourceTree = "<group>";
+		};
+		153B93572B4FBF84006D0F07 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				153B93582B4FBF84006D0F07 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		153B935F2B4FBF98006D0F07 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				153B93512B4FBF81006D0F07 /* IBanSaverApp_CollaborationApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		153B93602B4FBFC4006D0F07 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		153B93612B4FBFF3006D0F07 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				153B93652B4FC027006D0F07 /* Login */,
+				153B93642B4FC022006D0F07 /* Registration */,
+				153B93632B4FC01C006D0F07 /* IBanList */,
+				153B93622B4FC012006D0F07 /* AddIban */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		153B93622B4FC012006D0F07 /* AddIban */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = AddIban;
+			sourceTree = "<group>";
+		};
+		153B93632B4FC01C006D0F07 /* IBanList */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = IBanList;
+			sourceTree = "<group>";
+		};
+		153B93642B4FC022006D0F07 /* Registration */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Registration;
+			sourceTree = "<group>";
+		};
+		153B93652B4FC027006D0F07 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				153B936C2B4FD28C006D0F07 /* LoginView.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		153B93662B4FC041006D0F07 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		153B93672B4FC053006D0F07 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		153B93682B4FC06A006D0F07 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				153B93552B4FBF84006D0F07 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		153B934D2B4FBF81006D0F07 /* IBanSaverApp-Collaboration */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 153B935C2B4FBF84006D0F07 /* Build configuration list for PBXNativeTarget "IBanSaverApp-Collaboration" */;
+			buildPhases = (
+				153B934A2B4FBF81006D0F07 /* Sources */,
+				153B934B2B4FBF81006D0F07 /* Frameworks */,
+				153B934C2B4FBF81006D0F07 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "IBanSaverApp-Collaboration";
+			packageProductDependencies = (
+				153B936A2B4FC11A006D0F07 /* GenericNetworkManager */,
+			);
+			productName = "IBanSaverApp-Collaboration";
+			productReference = 153B934E2B4FBF81006D0F07 /* IBanSaverApp-Collaboration.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		153B93462B4FBF81006D0F07 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					153B934D2B4FBF81006D0F07 = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+				};
+			};
+			buildConfigurationList = 153B93492B4FBF81006D0F07 /* Build configuration list for PBXProject "IBanSaverApp-Collaboration" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 153B93452B4FBF81006D0F07;
+			packageReferences = (
+				153B93692B4FC11A006D0F07 /* XCRemoteSwiftPackageReference "GenericNetworkManager" */,
+			);
+			productRefGroup = 153B934F2B4FBF81006D0F07 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				153B934D2B4FBF81006D0F07 /* IBanSaverApp-Collaboration */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		153B934C2B4FBF81006D0F07 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				153B93592B4FBF84006D0F07 /* Preview Assets.xcassets in Resources */,
+				153B93562B4FBF84006D0F07 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		153B934A2B4FBF81006D0F07 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				153B936D2B4FD28C006D0F07 /* LoginView.swift in Sources */,
+				153B93522B4FBF81006D0F07 /* IBanSaverApp_CollaborationApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		153B935A2B4FBF84006D0F07 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		153B935B2B4FBF84006D0F07 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		153B935D2B4FBF84006D0F07 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"IBanSaverApp-Collaboration/Preview Content\"";
+				DEVELOPMENT_TEAM = 4XJZ54JKFA;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "SB.IBanSaverApp-Collaboration";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		153B935E2B4FBF84006D0F07 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"IBanSaverApp-Collaboration/Preview Content\"";
+				DEVELOPMENT_TEAM = 4XJZ54JKFA;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "SB.IBanSaverApp-Collaboration";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		153B93492B4FBF81006D0F07 /* Build configuration list for PBXProject "IBanSaverApp-Collaboration" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				153B935A2B4FBF84006D0F07 /* Debug */,
+				153B935B2B4FBF84006D0F07 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		153B935C2B4FBF84006D0F07 /* Build configuration list for PBXNativeTarget "IBanSaverApp-Collaboration" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				153B935D2B4FBF84006D0F07 /* Debug */,
+				153B935E2B4FBF84006D0F07 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		153B93692B4FC11A006D0F07 /* XCRemoteSwiftPackageReference "GenericNetworkManager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ekakele/GenericNetworkManager";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		153B936A2B4FC11A006D0F07 /* GenericNetworkManager */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 153B93692B4FC11A006D0F07 /* XCRemoteSwiftPackageReference "GenericNetworkManager" */;
+			productName = GenericNetworkManager;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 153B93462B4FBF81006D0F07 /* Project object */;
+}
