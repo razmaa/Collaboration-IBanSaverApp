@@ -13,6 +13,7 @@
 		153B936B2B4FC11A006D0F07 /* GenericNetworkManager in Frameworks */ = {isa = PBXBuildFile; productRef = 153B936A2B4FC11A006D0F07 /* GenericNetworkManager */; };
 		153B936D2B4FD28C006D0F07 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153B936C2B4FD28C006D0F07 /* LoginView.swift */; };
 		B52B03FE2B50420B00BD5AD5 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B52B03FD2B50420B00BD5AD5 /* LoginViewModel.swift */; };
+		B52B04012B5046D100BD5AD5 /* AppColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B52B04002B5046D100BD5AD5 /* AppColor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		153B93582B4FBF84006D0F07 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		153B936C2B4FD28C006D0F07 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		B52B03FD2B50420B00BD5AD5 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		B52B04002B5046D100BD5AD5 /* AppColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +142,7 @@
 		153B93672B4FC053006D0F07 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				B52B03FF2B5046A400BD5AD5 /* ColorExtension */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -150,6 +153,14 @@
 				153B93552B4FBF84006D0F07 /* Assets.xcassets */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		B52B03FF2B5046A400BD5AD5 /* ColorExtension */ = {
+			isa = PBXGroup;
+			children = (
+				B52B04002B5046D100BD5AD5 /* AppColor.swift */,
+			);
+			path = ColorExtension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,6 +242,7 @@
 				153B936D2B4FD28C006D0F07 /* LoginView.swift in Sources */,
 				153B93522B4FBF81006D0F07 /* IBanSaverApp_CollaborationApp.swift in Sources */,
 				B52B03FE2B50420B00BD5AD5 /* LoginViewModel.swift in Sources */,
+				B52B04012B5046D100BD5AD5 /* AppColor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
