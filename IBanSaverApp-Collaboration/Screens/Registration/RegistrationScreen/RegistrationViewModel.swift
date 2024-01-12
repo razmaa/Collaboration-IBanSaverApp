@@ -46,4 +46,21 @@ class RegistationViewModel: ObservableObject {
     func checkEmail(_ email: String) {
         isValid = isEmailValid
     }
+    
+    func registration() {
+            guard !email.isEmpty, !password.isEmpty else {
+                print("no such user found")
+                return
+            }
+            
+            Task {
+                do {
+                    let returnedUserData = try await AuthenticationManager.shared.registerUser(email: email, password: password)
+                    print("success")
+                    print(returnedUserData)
+                } catch {
+                    print("Error: \(error)")
+                }
+            }
+        }
 }

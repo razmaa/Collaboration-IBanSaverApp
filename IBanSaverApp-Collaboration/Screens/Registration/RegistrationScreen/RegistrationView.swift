@@ -25,7 +25,7 @@ struct RegistrationView: View {
     
     // MARK: - Components
     private var setupButtonView: some View {
-        ButtonView(title: "Register", action: {}, buttonColor: (viewModel.isEmailValid && viewModel.isValid) ? AppColor.blue : AppColor.darkGray, viewModel: viewModel)
+        ButtonView(title: "Register", action: viewModel.registration, buttonColor: (viewModel.isEmailValid && viewModel.isValid) ? AppColor.blue : AppColor.darkGray, viewModel: viewModel)
     }
     
     private var setupPasswordRestrictionsView: some View {
