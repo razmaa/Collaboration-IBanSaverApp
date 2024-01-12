@@ -17,6 +17,8 @@
 		98428F9F2B5144BA00040035 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98428F9E2B5144BA00040035 /* ButtonView.swift */; };
 		98428FA12B51453E00040035 /* PasswordRestrictionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98428FA02B51453E00040035 /* PasswordRestrictionsView.swift */; };
 		98428FA32B51456100040035 /* TextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98428FA22B51456100040035 /* TextFieldView.swift */; };
+		98428FA62B514F1600040035 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98428FA52B514F1600040035 /* RegistrationView.swift */; };
+		98428FA82B514F2100040035 /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98428FA72B514F2100040035 /* RegistrationViewModel.swift */; };
 		B52B04012B5046D100BD5AD5 /* AppColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B52B04002B5046D100BD5AD5 /* AppColor.swift */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +33,8 @@
 		98428F9E2B5144BA00040035 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 		98428FA02B51453E00040035 /* PasswordRestrictionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordRestrictionsView.swift; sourceTree = "<group>"; };
 		98428FA22B51456100040035 /* TextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldView.swift; sourceTree = "<group>"; };
+		98428FA52B514F1600040035 /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
+		98428FA72B514F2100040035 /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
 		B52B04002B5046D100BD5AD5 /* AppColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -127,6 +131,7 @@
 		153B93642B4FC022006D0F07 /* Registration */ = {
 			isa = PBXGroup;
 			children = (
+				98428FA42B514F0300040035 /* RegistrationScreen */,
 			);
 			path = Registration;
 			sourceTree = "<group>";
@@ -173,6 +178,15 @@
 				98428FA02B51453E00040035 /* PasswordRestrictionsView.swift */,
 			);
 			path = SmallComponents;
+			sourceTree = "<group>";
+		};
+		98428FA42B514F0300040035 /* RegistrationScreen */ = {
+			isa = PBXGroup;
+			children = (
+				98428FA52B514F1600040035 /* RegistrationView.swift */,
+				98428FA72B514F2100040035 /* RegistrationViewModel.swift */,
+			);
+			path = RegistrationScreen;
 			sourceTree = "<group>";
 		};
 		B52B03FF2B5046A400BD5AD5 /* ColorExtension */ = {
@@ -262,7 +276,9 @@
 				153B936D2B4FD28C006D0F07 /* LoginView.swift in Sources */,
 				153B93522B4FBF81006D0F07 /* IBanSaverApp_CollaborationApp.swift in Sources */,
 				98428FA32B51456100040035 /* TextFieldView.swift in Sources */,
+				98428FA62B514F1600040035 /* RegistrationView.swift in Sources */,
 				98428F9F2B5144BA00040035 /* ButtonView.swift in Sources */,
+				98428FA82B514F2100040035 /* RegistrationViewModel.swift in Sources */,
 				98428FA12B51453E00040035 /* PasswordRestrictionsView.swift in Sources */,
 				98428F9D2B51448B00040035 /* UserAvatarView.swift in Sources */,
 				B52B04012B5046D100BD5AD5 /* AppColor.swift in Sources */,
