@@ -12,6 +12,11 @@
 		153B93592B4FBF84006D0F07 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 153B93582B4FBF84006D0F07 /* Preview Assets.xcassets */; };
 		153B936B2B4FC11A006D0F07 /* GenericNetworkManager in Frameworks */ = {isa = PBXBuildFile; productRef = 153B936A2B4FC11A006D0F07 /* GenericNetworkManager */; };
 		153B936D2B4FD28C006D0F07 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153B936C2B4FD28C006D0F07 /* LoginView.swift */; };
+		98428F9B2B51446200040035 /* TitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98428F9A2B51446200040035 /* TitleView.swift */; };
+		98428F9D2B51448B00040035 /* UserAvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98428F9C2B51448B00040035 /* UserAvatarView.swift */; };
+		98428F9F2B5144BA00040035 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98428F9E2B5144BA00040035 /* ButtonView.swift */; };
+		98428FA12B51453E00040035 /* PasswordRestrictionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98428FA02B51453E00040035 /* PasswordRestrictionsView.swift */; };
+		98428FA32B51456100040035 /* TextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98428FA22B51456100040035 /* TextFieldView.swift */; };
 		B52B04012B5046D100BD5AD5 /* AppColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B52B04002B5046D100BD5AD5 /* AppColor.swift */; };
 /* End PBXBuildFile section */
 
@@ -21,6 +26,11 @@
 		153B93552B4FBF84006D0F07 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		153B93582B4FBF84006D0F07 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		153B936C2B4FD28C006D0F07 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		98428F9A2B51446200040035 /* TitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleView.swift; sourceTree = "<group>"; };
+		98428F9C2B51448B00040035 /* UserAvatarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAvatarView.swift; sourceTree = "<group>"; };
+		98428F9E2B5144BA00040035 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
+		98428FA02B51453E00040035 /* PasswordRestrictionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordRestrictionsView.swift; sourceTree = "<group>"; };
+		98428FA22B51456100040035 /* TextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldView.swift; sourceTree = "<group>"; };
 		B52B04002B5046D100BD5AD5 /* AppColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -132,6 +142,7 @@
 		153B93662B4FC041006D0F07 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				98428F992B51425900040035 /* SmallComponents */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -150,6 +161,18 @@
 				153B93552B4FBF84006D0F07 /* Assets.xcassets */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		98428F992B51425900040035 /* SmallComponents */ = {
+			isa = PBXGroup;
+			children = (
+				98428F9A2B51446200040035 /* TitleView.swift */,
+				98428FA22B51456100040035 /* TextFieldView.swift */,
+				98428F9C2B51448B00040035 /* UserAvatarView.swift */,
+				98428F9E2B5144BA00040035 /* ButtonView.swift */,
+				98428FA02B51453E00040035 /* PasswordRestrictionsView.swift */,
+			);
+			path = SmallComponents;
 			sourceTree = "<group>";
 		};
 		B52B03FF2B5046A400BD5AD5 /* ColorExtension */ = {
@@ -238,7 +261,12 @@
 			files = (
 				153B936D2B4FD28C006D0F07 /* LoginView.swift in Sources */,
 				153B93522B4FBF81006D0F07 /* IBanSaverApp_CollaborationApp.swift in Sources */,
+				98428FA32B51456100040035 /* TextFieldView.swift in Sources */,
+				98428F9F2B5144BA00040035 /* ButtonView.swift in Sources */,
+				98428FA12B51453E00040035 /* PasswordRestrictionsView.swift in Sources */,
+				98428F9D2B51448B00040035 /* UserAvatarView.swift in Sources */,
 				B52B04012B5046D100BD5AD5 /* AppColor.swift in Sources */,
+				98428F9B2B51446200040035 /* TitleView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
