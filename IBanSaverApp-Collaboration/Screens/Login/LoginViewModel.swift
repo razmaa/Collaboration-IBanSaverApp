@@ -6,3 +6,12 @@
 //
 
 import Foundation
+
+final class LoginViewModel: ObservableObject {
+    // MARK: - Properties
+    @Published var email: String = ""
+    @Published var password: String = ""
+    @Published var isValid: Bool = false
+    
+    
+}
