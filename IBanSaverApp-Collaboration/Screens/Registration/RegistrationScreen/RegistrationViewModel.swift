@@ -34,4 +34,16 @@ class RegistationViewModel: ObservableObject {
     func checkPassword(_ password: String) {
         isValid = meetsLengthRequirement && meetsUppercaseRequirement && meetsNumberRequirement && meetsSpecialCharRequirement
     }
+    
+    // MARK: - Email Properties
+    var isEmailValid: Bool {
+        let emailRegex = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
+        let emailTest = NSPredicate(format:"SELF MATCHES %@", emailRegex)
+        return emailTest.evaluate(with: email)
+    }
+    
+    // MARK: - Email Methods
+    func checkEmail(_ email: String) {
+        isValid = isEmailValid
+    }
 }
