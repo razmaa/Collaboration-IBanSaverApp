@@ -17,6 +17,8 @@
 		98428F9F2B5144BA00040035 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98428F9E2B5144BA00040035 /* ButtonView.swift */; };
 		98428FA12B51453E00040035 /* PasswordRestrictionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98428FA02B51453E00040035 /* PasswordRestrictionsView.swift */; };
 		98428FA32B51456100040035 /* TextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98428FA22B51456100040035 /* TextFieldView.swift */; };
+		B52153BD2B51A2780008BF18 /* AuthenticationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B52153BC2B51A2780008BF18 /* AuthenticationManager.swift */; };
+		B52153BF2B51A3920008BF18 /* AuthDataResultModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B52153BE2B51A3920008BF18 /* AuthDataResultModel.swift */; };
 		B52B04012B5046D100BD5AD5 /* AppColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B52B04002B5046D100BD5AD5 /* AppColor.swift */; };
 		B57E7FC72B516D80005E765A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B57E7FC62B516D80005E765A /* GoogleService-Info.plist */; };
 		B57E7FCA2B517B99005E765A /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = B57E7FC92B517B99005E765A /* FirebaseAnalytics */; };
@@ -35,6 +37,8 @@
 		98428F9E2B5144BA00040035 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 		98428FA02B51453E00040035 /* PasswordRestrictionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordRestrictionsView.swift; sourceTree = "<group>"; };
 		98428FA22B51456100040035 /* TextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldView.swift; sourceTree = "<group>"; };
+		B52153BC2B51A2780008BF18 /* AuthenticationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationManager.swift; sourceTree = "<group>"; };
+		B52153BE2B51A3920008BF18 /* AuthDataResultModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthDataResultModel.swift; sourceTree = "<group>"; };
 		B52B04002B5046D100BD5AD5 /* AppColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColor.swift; sourceTree = "<group>"; };
 		B57E7FC62B516D80005E765A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -75,13 +79,13 @@
 			isa = PBXGroup;
 			children = (
 				153B935F2B4FBF98006D0F07 /* App */,
+				B57E7FC52B516D44005E765A /* Firebase */,
 				153B93602B4FBFC4006D0F07 /* Models */,
 				153B93612B4FBFF3006D0F07 /* Screens */,
 				153B93662B4FC041006D0F07 /* Components */,
 				153B93672B4FC053006D0F07 /* Extensions */,
 				153B93682B4FC06A006D0F07 /* Resources */,
 				153B93572B4FBF84006D0F07 /* Preview Content */,
-				B57E7FC52B516D44005E765A /* FirebaseInfo */,
 			);
 			path = "IBanSaverApp-Collaboration";
 			sourceTree = "<group>";
@@ -105,6 +109,7 @@
 		153B93602B4FBFC4006D0F07 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				B52153BE2B51A3920008BF18 /* AuthDataResultModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -193,12 +198,13 @@
 			path = ColorExtension;
 			sourceTree = "<group>";
 		};
-		B57E7FC52B516D44005E765A /* FirebaseInfo */ = {
+		B57E7FC52B516D44005E765A /* Firebase */ = {
 			isa = PBXGroup;
 			children = (
+				B52153BC2B51A2780008BF18 /* AuthenticationManager.swift */,
 				B57E7FC62B516D80005E765A /* GoogleService-Info.plist */,
 			);
-			path = FirebaseInfo;
+			path = Firebase;
 			sourceTree = "<group>";
 		};
 		B57E7FD32B517C24005E765A /* Frameworks */ = {
@@ -292,6 +298,8 @@
 				153B936D2B4FD28C006D0F07 /* LoginView.swift in Sources */,
 				153B93522B4FBF81006D0F07 /* IBanSaverApp_CollaborationApp.swift in Sources */,
 				98428FA32B51456100040035 /* TextFieldView.swift in Sources */,
+				B52153BD2B51A2780008BF18 /* AuthenticationManager.swift in Sources */,
+				B52153BF2B51A3920008BF18 /* AuthDataResultModel.swift in Sources */,
 				98428F9F2B5144BA00040035 /* ButtonView.swift in Sources */,
 				98428FA12B51453E00040035 /* PasswordRestrictionsView.swift in Sources */,
 				98428F9D2B51448B00040035 /* UserAvatarView.swift in Sources */,
