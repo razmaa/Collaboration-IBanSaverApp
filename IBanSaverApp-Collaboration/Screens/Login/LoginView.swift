@@ -27,13 +27,26 @@ struct LoginView: View {
     
     // MARK: - Components
     private var setupButtonView: some View {
-        ButtonView(title: "Login", action: {}, buttonColor: viewModel.isValid ? AppColor.blue : AppColor.darkGray, viewModel: viewModel)
+        ButtonView(
+            title: "Login",
+            action: {
+                viewModel.login()
+            },
+            buttonColor: viewModel.isValid ? AppColor.blue : AppColor.darkGray, viewModel: viewModel
+        )
     }
     
     private var TextFieldStackView: some View {
         VStack(spacing: 20) {
-            TextFieldView(placeholder: .email, text: $viewModel.email)
-            TextFieldView(placeholder: .password, text: $viewModel.password, isSecure: true)
+            TextFieldView(
+                placeholder: .email,
+                text: $viewModel.email
+            )
+            TextFieldView(
+                placeholder: .password,
+                text: $viewModel.password,
+                isSecure: true
+            )
         }
         .padding()
     }
