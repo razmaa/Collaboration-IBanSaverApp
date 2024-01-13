@@ -12,6 +12,10 @@
 		153B93592B4FBF84006D0F07 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 153B93582B4FBF84006D0F07 /* Preview Assets.xcassets */; };
 		153B936B2B4FC11A006D0F07 /* GenericNetworkManager in Frameworks */ = {isa = PBXBuildFile; productRef = 153B936A2B4FC11A006D0F07 /* GenericNetworkManager */; };
 		153B936D2B4FD28C006D0F07 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153B936C2B4FD28C006D0F07 /* LoginView.swift */; };
+		B52B03FE2B50420B00BD5AD5 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B52B03FD2B50420B00BD5AD5 /* LoginViewModel.swift */; };
+		158C61462B5300C2002B0594 /* Bank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158C61452B5300C2002B0594 /* Bank.swift */; };
+		158C61482B5300D8002B0594 /* IBAN.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158C61472B5300D8002B0594 /* IBAN.swift */; };
+		158C614A2B5300EC002B0594 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158C61492B5300EC002B0594 /* Person.swift */; };
 		98428F9B2B51446200040035 /* TitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98428F9A2B51446200040035 /* TitleView.swift */; };
 		98428F9D2B51448B00040035 /* UserAvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98428F9C2B51448B00040035 /* UserAvatarView.swift */; };
 		98428F9F2B5144BA00040035 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98428F9E2B5144BA00040035 /* ButtonView.swift */; };
@@ -34,6 +38,10 @@
 		153B93552B4FBF84006D0F07 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		153B93582B4FBF84006D0F07 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		153B936C2B4FD28C006D0F07 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		B52B03FD2B50420B00BD5AD5 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		158C61452B5300C2002B0594 /* Bank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bank.swift; sourceTree = "<group>"; };
+		158C61472B5300D8002B0594 /* IBAN.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IBAN.swift; sourceTree = "<group>"; };
+		158C61492B5300EC002B0594 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		98428F9A2B51446200040035 /* TitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleView.swift; sourceTree = "<group>"; };
 		98428F9C2B51448B00040035 /* UserAvatarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAvatarView.swift; sourceTree = "<group>"; };
 		98428F9E2B5144BA00040035 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
@@ -114,6 +122,9 @@
 			isa = PBXGroup;
 			children = (
 				B52153BE2B51A3920008BF18 /* AuthDataResultModel.swift */,
+				158C61452B5300C2002B0594 /* Bank.swift */,
+				158C61472B5300D8002B0594 /* IBAN.swift */,
+				158C61492B5300EC002B0594 /* Person.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -155,6 +166,7 @@
 			isa = PBXGroup;
 			children = (
 				153B936C2B4FD28C006D0F07 /* LoginView.swift */,
+				B52B03FD2B50420B00BD5AD5 /* LoginViewModel.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -311,14 +323,18 @@
 			files = (
 				153B936D2B4FD28C006D0F07 /* LoginView.swift in Sources */,
 				153B93522B4FBF81006D0F07 /* IBanSaverApp_CollaborationApp.swift in Sources */,
+				B52B03FE2B50420B00BD5AD5 /* LoginViewModel.swift in Sources */,
 				98428FA32B51456100040035 /* TextFieldView.swift in Sources */,
 				98428FA62B514F1600040035 /* RegistrationView.swift in Sources */,
+				158C61482B5300D8002B0594 /* IBAN.swift in Sources */,
 				B52153BD2B51A2780008BF18 /* AuthenticationManager.swift in Sources */,
 				B52153BF2B51A3920008BF18 /* AuthDataResultModel.swift in Sources */,
 				98428F9F2B5144BA00040035 /* ButtonView.swift in Sources */,
 				98428FA82B514F2100040035 /* RegistrationViewModel.swift in Sources */,
 				98428FA12B51453E00040035 /* PasswordRestrictionsView.swift in Sources */,
+				158C61462B5300C2002B0594 /* Bank.swift in Sources */,
 				98428F9D2B51448B00040035 /* UserAvatarView.swift in Sources */,
+				158C614A2B5300EC002B0594 /* Person.swift in Sources */,
 				B52B04012B5046D100BD5AD5 /* AppColor.swift in Sources */,
 				98428F9B2B51446200040035 /* TitleView.swift in Sources */,
 			);
