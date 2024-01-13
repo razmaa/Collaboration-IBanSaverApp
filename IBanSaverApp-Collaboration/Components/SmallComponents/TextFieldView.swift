@@ -10,6 +10,7 @@ import SwiftUI
 struct TextFieldView: View {
     // MARK: - Properties
     var placeholder: PlaceholderText
+    var customPlaceholder: String?
     var text: Binding<String>
     var isSecure = false
     
@@ -17,19 +18,14 @@ struct TextFieldView: View {
     var body: some View {
         Group {
             if isSecure {
-                SecureField(placeholderText, text: text)
+                SecureField(customPlaceholder ?? placeholder.rawValue, text: text)
             } else {
-                TextField(placeholderText, text: text)
+                TextField(customPlaceholder ?? placeholder.rawValue, text: text)
             }
         }
         .padding()
         .background(AppColor.lightGray)
         .cornerRadius(8)
-    }
-    
-    // MARK: - Components
-    var placeholderText: String {
-        return placeholder.rawValue
     }
 }
 
@@ -37,6 +33,7 @@ struct TextFieldView: View {
 enum PlaceholderText: String {
     case email = "Enter your Email"
     case password = "Enter your Password"
+    case custom = ""
 }
 
 #Preview {
