@@ -21,6 +21,8 @@
 		98428F9F2B5144BA00040035 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98428F9E2B5144BA00040035 /* ButtonView.swift */; };
 		98428FA12B51453E00040035 /* PasswordRestrictionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98428FA02B51453E00040035 /* PasswordRestrictionsView.swift */; };
 		98428FA32B51456100040035 /* TextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98428FA22B51456100040035 /* TextFieldView.swift */; };
+		98428FA62B514F1600040035 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98428FA52B514F1600040035 /* RegistrationView.swift */; };
+		98428FA82B514F2100040035 /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98428FA72B514F2100040035 /* RegistrationViewModel.swift */; };
 		B52153BD2B51A2780008BF18 /* AuthenticationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B52153BC2B51A2780008BF18 /* AuthenticationManager.swift */; };
 		B52153BF2B51A3920008BF18 /* AuthDataResultModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B52153BE2B51A3920008BF18 /* AuthDataResultModel.swift */; };
 		B52153C12B51B5DF0008BF18 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B52153C02B51B5DF0008BF18 /* GoogleService-Info.plist */; };
@@ -46,6 +48,8 @@
 		98428F9E2B5144BA00040035 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 		98428FA02B51453E00040035 /* PasswordRestrictionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordRestrictionsView.swift; sourceTree = "<group>"; };
 		98428FA22B51456100040035 /* TextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldView.swift; sourceTree = "<group>"; };
+		98428FA52B514F1600040035 /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
+		98428FA72B514F2100040035 /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
 		B52153BC2B51A2780008BF18 /* AuthenticationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationManager.swift; sourceTree = "<group>"; };
 		B52153BE2B51A3920008BF18 /* AuthDataResultModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthDataResultModel.swift; sourceTree = "<group>"; };
 		B52153C02B51B5DF0008BF18 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -156,6 +160,7 @@
 		153B93642B4FC022006D0F07 /* Registration */ = {
 			isa = PBXGroup;
 			children = (
+				98428FA42B514F0300040035 /* RegistrationScreen */,
 			);
 			path = Registration;
 			sourceTree = "<group>";
@@ -211,6 +216,15 @@
 				98428FA02B51453E00040035 /* PasswordRestrictionsView.swift */,
 			);
 			path = SmallComponents;
+			sourceTree = "<group>";
+		};
+		98428FA42B514F0300040035 /* RegistrationScreen */ = {
+			isa = PBXGroup;
+			children = (
+				98428FA52B514F1600040035 /* RegistrationView.swift */,
+				98428FA72B514F2100040035 /* RegistrationViewModel.swift */,
+			);
+			path = RegistrationScreen;
 			sourceTree = "<group>";
 		};
 		B52B03FF2B5046A400BD5AD5 /* ColorExtension */ = {
@@ -323,10 +337,12 @@
 				B52B03FE2B50420B00BD5AD5 /* LoginViewModel.swift in Sources */,
 				98428FA32B51456100040035 /* TextFieldView.swift in Sources */,
 				158C614D2B5336F8002B0594 /* PersonDataSource.swift in Sources */,
+				98428FA62B514F1600040035 /* RegistrationView.swift in Sources */,
 				158C61482B5300D8002B0594 /* IBAN.swift in Sources */,
 				B52153BD2B51A2780008BF18 /* AuthenticationManager.swift in Sources */,
 				B52153BF2B51A3920008BF18 /* AuthDataResultModel.swift in Sources */,
 				98428F9F2B5144BA00040035 /* ButtonView.swift in Sources */,
+				98428FA82B514F2100040035 /* RegistrationViewModel.swift in Sources */,
 				98428FA12B51453E00040035 /* PasswordRestrictionsView.swift in Sources */,
 				158C61462B5300C2002B0594 /* Bank.swift in Sources */,
 				98428F9D2B51448B00040035 /* UserAvatarView.swift in Sources */,
