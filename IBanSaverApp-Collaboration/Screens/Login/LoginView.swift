@@ -18,6 +18,7 @@ struct LoginView: View {
             Spacer()
             UserAvatarView()
             TextFieldStackView
+            errorTextView
             Spacer()
             setupButtonView
             Spacer()
@@ -26,6 +27,15 @@ struct LoginView: View {
     }
     
     // MARK: - Components
+    private var errorTextView: some View {
+        Text(viewModel.errorMessage)
+            .foregroundStyle(AppColor.red)
+            .font(.subheadline)
+            .multilineTextAlignment(.center)
+            .frame(height: 50)
+            .padding(.horizontal, 10)
+    }
+    
     private var setupButtonView: some View {
         ButtonView(
             title: "Login",

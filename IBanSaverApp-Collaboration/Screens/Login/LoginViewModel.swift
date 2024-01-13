@@ -12,16 +12,7 @@ final class LoginViewModel: ObservableObject {
     @Published var email: String = ""
     @Published var password: String = ""
     @Published var isValid: Bool = false
-    
-    private var UID: String {
-        do {
-            let authenticatedUser = try AuthenticationManager.shared.getAuthenticatedUser()
-            return authenticatedUser.UID
-        } catch {
-            print("Error getting authenticated user: \(error)")
-            return ""
-        }
-    }
+    @Published var errorMessage: String = ""
     
     // MARK: - Methods
     func login() {
@@ -32,15 +23,13 @@ final class LoginViewModel: ObservableObject {
         
         Task {
             do {
-                let authenticatedUser = try AuthenticationManager.shared.getAuthenticatedUser()
-                
-                if email.lowercased() == authenticatedUser.email?.lowercased() ?? "" && UID == authenticatedUser.UID {
-                    isValid = true
-                    print(LoginState.validCredentials.rawValue)
-                } else {
-                    print(LoginState.invalidCredentials.rawValue)
-                }
-            }  catch {
+                let returnedUserData = try await AuthenticationManager.shared.signInUser(email: email, password: password)
+                print(LoginState.validCredentials.rawValue)
+                print(returnedUserData)
+            }
+            catch {
+                errorMessage = LoginState.invalidCredentials.rawValue
+                print(LoginState.invalidCredentials.rawValue)
                 print("Error: \(error)")
             }
         }
