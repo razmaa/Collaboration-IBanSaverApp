@@ -13,8 +13,10 @@ import AVFoundation
 struct QRScannerView: UIViewControllerRepresentable {
     // MARK: - Coordinator
     class Coordinator: NSObject, AVCaptureMetadataOutputObjectsDelegate {
+        // MARK: - Properties
         var parent: QRScannerView
-
+        
+        // MARK: - Init
         init(parent: QRScannerView) {
             self.parent = parent
         }
@@ -31,6 +33,7 @@ struct QRScannerView: UIViewControllerRepresentable {
 
     var didFindCode: (String) -> Void
 
+    // MARK: - Methods
     func makeCoordinator() -> Coordinator {
         return Coordinator(parent: self)
     }
