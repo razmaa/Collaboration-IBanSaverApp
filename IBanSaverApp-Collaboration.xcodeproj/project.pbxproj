@@ -27,6 +27,9 @@
 		D968AA482B52A20700996BC1 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = D968AA472B52A20700996BC1 /* Person.swift */; };
 		D968AA4A2B52A2A400996BC1 /* Bank.swift in Sources */ = {isa = PBXBuildFile; fileRef = D968AA492B52A2A400996BC1 /* Bank.swift */; };
 		D968AA4C2B52A2BA00996BC1 /* IBAN.swift in Sources */ = {isa = PBXBuildFile; fileRef = D968AA4B2B52A2BA00996BC1 /* IBAN.swift */; };
+		D968AA4F2B52A47B00996BC1 /* AddPerson.swift in Sources */ = {isa = PBXBuildFile; fileRef = D968AA4E2B52A47B00996BC1 /* AddPerson.swift */; };
+		D968AA512B52AB6000996BC1 /* PersonDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D968AA502B52AB6000996BC1 /* PersonDataSource.swift */; };
+		D968AA532B52ADBD00996BC1 /* AddIBAN.swift in Sources */ = {isa = PBXBuildFile; fileRef = D968AA522B52ADBD00996BC1 /* AddIBAN.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +50,9 @@
 		D968AA472B52A20700996BC1 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		D968AA492B52A2A400996BC1 /* Bank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bank.swift; sourceTree = "<group>"; };
 		D968AA4B2B52A2BA00996BC1 /* IBAN.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IBAN.swift; sourceTree = "<group>"; };
+		D968AA4E2B52A47B00996BC1 /* AddPerson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPerson.swift; sourceTree = "<group>"; };
+		D968AA502B52AB6000996BC1 /* PersonDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDataSource.swift; sourceTree = "<group>"; };
+		D968AA522B52ADBD00996BC1 /* AddIBAN.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddIBAN.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,19 +132,12 @@
 		153B93612B4FBFF3006D0F07 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				D968AA4D2B52A46D00996BC1 /* AddIban */,
 				153B93652B4FC027006D0F07 /* Login */,
 				153B93642B4FC022006D0F07 /* Registration */,
 				153B93632B4FC01C006D0F07 /* IBanList */,
-				153B93622B4FC012006D0F07 /* AddIban */,
 			);
 			path = Screens;
-			sourceTree = "<group>";
-		};
-		153B93622B4FC012006D0F07 /* AddIban */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = AddIban;
 			sourceTree = "<group>";
 		};
 		153B93632B4FC01C006D0F07 /* IBanList */ = {
@@ -221,6 +220,16 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D968AA4D2B52A46D00996BC1 /* AddIban */ = {
+			isa = PBXGroup;
+			children = (
+				D968AA522B52ADBD00996BC1 /* AddIBAN.swift */,
+				D968AA4E2B52A47B00996BC1 /* AddPerson.swift */,
+				D968AA502B52AB6000996BC1 /* PersonDataSource.swift */,
+			);
+			path = AddIban;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -308,11 +317,14 @@
 				153B93522B4FBF81006D0F07 /* IBanSaverApp_CollaborationApp.swift in Sources */,
 				98428FA32B51456100040035 /* TextFieldView.swift in Sources */,
 				D968AA4C2B52A2BA00996BC1 /* IBAN.swift in Sources */,
+				D968AA512B52AB6000996BC1 /* PersonDataSource.swift in Sources */,
 				B52153BD2B51A2780008BF18 /* AuthenticationManager.swift in Sources */,
 				D968AA482B52A20700996BC1 /* Person.swift in Sources */,
+				D968AA4F2B52A47B00996BC1 /* AddPerson.swift in Sources */,
 				B52153BF2B51A3920008BF18 /* AuthDataResultModel.swift in Sources */,
 				98428F9F2B5144BA00040035 /* ButtonView.swift in Sources */,
 				98428FA12B51453E00040035 /* PasswordRestrictionsView.swift in Sources */,
+				D968AA532B52ADBD00996BC1 /* AddIBAN.swift in Sources */,
 				98428F9D2B51448B00040035 /* UserAvatarView.swift in Sources */,
 				D968AA4A2B52A2A400996BC1 /* Bank.swift in Sources */,
 				B52B04012B5046D100BD5AD5 /* AppColor.swift in Sources */,
