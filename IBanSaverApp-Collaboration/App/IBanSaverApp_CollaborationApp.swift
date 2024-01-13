@@ -16,7 +16,7 @@ struct IBanSaverApp_CollaborationApp: App {
     var body: some Scene {
         WindowGroup {
             NavigationStack {
-                AddIBANView(person: Person(name: "First", surname: "Last"))
+                LoginView()
             }
             .environmentObject(PersonDataSource())
         }
