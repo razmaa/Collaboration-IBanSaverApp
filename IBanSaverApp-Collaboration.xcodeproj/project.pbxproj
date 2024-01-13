@@ -24,6 +24,7 @@
 		B57E7FCA2B517B99005E765A /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = B57E7FC92B517B99005E765A /* FirebaseAnalytics */; };
 		B57E7FCE2B517B99005E765A /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = B57E7FCD2B517B99005E765A /* FirebaseAnalyticsSwift */; };
 		B57E7FD52B517C24005E765A /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = B57E7FD42B517C24005E765A /* FirebaseAuth */; };
+		D92FE81F2B52BC10001A143A /* QRScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92FE81E2B52BC10001A143A /* QRScannerView.swift */; };
 		D968AA482B52A20700996BC1 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = D968AA472B52A20700996BC1 /* Person.swift */; };
 		D968AA4A2B52A2A400996BC1 /* Bank.swift in Sources */ = {isa = PBXBuildFile; fileRef = D968AA492B52A2A400996BC1 /* Bank.swift */; };
 		D968AA4C2B52A2BA00996BC1 /* IBAN.swift in Sources */ = {isa = PBXBuildFile; fileRef = D968AA4B2B52A2BA00996BC1 /* IBAN.swift */; };
@@ -47,6 +48,7 @@
 		B52153BE2B51A3920008BF18 /* AuthDataResultModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthDataResultModel.swift; sourceTree = "<group>"; };
 		B52153C02B51B5DF0008BF18 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B52B04002B5046D100BD5AD5 /* AppColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColor.swift; sourceTree = "<group>"; };
+		D92FE81E2B52BC10001A143A /* QRScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRScannerView.swift; sourceTree = "<group>"; };
 		D968AA472B52A20700996BC1 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		D968AA492B52A2A400996BC1 /* Bank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bank.swift; sourceTree = "<group>"; };
 		D968AA4B2B52A2BA00996BC1 /* IBAN.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IBAN.swift; sourceTree = "<group>"; };
@@ -228,6 +230,7 @@
 				D968AA522B52ADBD00996BC1 /* AddIBAN.swift */,
 				D968AA4E2B52A47B00996BC1 /* AddPerson.swift */,
 				D968AA502B52AB6000996BC1 /* PersonDataSource.swift */,
+				D92FE81E2B52BC10001A143A /* QRScannerView.swift */,
 			);
 			path = AddIban;
 			sourceTree = "<group>";
@@ -315,6 +318,7 @@
 			files = (
 				153B936D2B4FD28C006D0F07 /* LoginView.swift in Sources */,
 				153B93522B4FBF81006D0F07 /* IBanSaverApp_CollaborationApp.swift in Sources */,
+				D92FE81F2B52BC10001A143A /* QRScannerView.swift in Sources */,
 				98428FA32B51456100040035 /* TextFieldView.swift in Sources */,
 				D968AA4C2B52A2BA00996BC1 /* IBAN.swift in Sources */,
 				D968AA512B52AB6000996BC1 /* PersonDataSource.swift in Sources */,
@@ -462,9 +466,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"IBanSaverApp-Collaboration/Preview Content\"";
-				DEVELOPMENT_TEAM = 4XJZ54JKFA;
+				DEVELOPMENT_TEAM = KX2NAC6M42;
 				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -475,7 +480,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "SB.IBanSaverApp-Collaboration";
+				PRODUCT_BUNDLE_IDENTIFIER = "SB.IBanSaverApp-Collaboration.Khizanishvili.Natia";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -491,9 +496,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"IBanSaverApp-Collaboration/Preview Content\"";
-				DEVELOPMENT_TEAM = 4XJZ54JKFA;
+				DEVELOPMENT_TEAM = KX2NAC6M42;
 				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -504,7 +510,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "SB.IBanSaverApp-Collaboration";
+				PRODUCT_BUNDLE_IDENTIFIER = "SB.IBanSaverApp-Collaboration.Khizanishvili.Natia";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

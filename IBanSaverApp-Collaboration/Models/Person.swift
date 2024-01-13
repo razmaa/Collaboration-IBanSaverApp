@@ -7,7 +7,7 @@
 
 import Foundation
 
-class Person: Identifiable {
+final class Person: Identifiable {
     let id: String = UUID().uuidString
     let name: String
     let surname: String
