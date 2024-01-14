@@ -10,7 +10,6 @@
 		153B93522B4FBF81006D0F07 /* IBanSaverApp_CollaborationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153B93512B4FBF81006D0F07 /* IBanSaverApp_CollaborationApp.swift */; };
 		153B93562B4FBF84006D0F07 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 153B93552B4FBF84006D0F07 /* Assets.xcassets */; };
 		153B93592B4FBF84006D0F07 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 153B93582B4FBF84006D0F07 /* Preview Assets.xcassets */; };
-		153B936B2B4FC11A006D0F07 /* GenericNetworkManager in Frameworks */ = {isa = PBXBuildFile; productRef = 153B936A2B4FC11A006D0F07 /* GenericNetworkManager */; };
 		153B936D2B4FD28C006D0F07 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153B936C2B4FD28C006D0F07 /* LoginView.swift */; };
 		98428F9B2B51446200040035 /* TitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98428F9A2B51446200040035 /* TitleView.swift */; };
 		98428F9D2B51448B00040035 /* UserAvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98428F9C2B51448B00040035 /* UserAvatarView.swift */; };
@@ -50,7 +49,6 @@
 			files = (
 				B57E7FCE2B517B99005E765A /* FirebaseAnalyticsSwift in Frameworks */,
 				B57E7FCA2B517B99005E765A /* FirebaseAnalytics in Frameworks */,
-				153B936B2B4FC11A006D0F07 /* GenericNetworkManager in Frameworks */,
 				B57E7FD52B517C24005E765A /* FirebaseAuth in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -231,7 +229,6 @@
 			);
 			name = "IBanSaverApp-Collaboration";
 			packageProductDependencies = (
-				153B936A2B4FC11A006D0F07 /* GenericNetworkManager */,
 				B57E7FC92B517B99005E765A /* FirebaseAnalytics */,
 				B57E7FCD2B517B99005E765A /* FirebaseAnalyticsSwift */,
 				B57E7FD42B517C24005E765A /* FirebaseAuth */,
@@ -531,11 +528,6 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		153B936A2B4FC11A006D0F07 /* GenericNetworkManager */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 153B93692B4FC11A006D0F07 /* XCRemoteSwiftPackageReference "GenericNetworkManager" */;
-			productName = GenericNetworkManager;
-		};
 		B57E7FC92B517B99005E765A /* FirebaseAnalytics */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = B57E7FC82B517B99005E765A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
