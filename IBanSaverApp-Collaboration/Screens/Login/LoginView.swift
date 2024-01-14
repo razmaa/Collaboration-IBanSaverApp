@@ -81,14 +81,12 @@ struct LoginView: View {
 }
 
 struct RegistrationViewRepresentable: UIViewControllerRepresentable {
-    typealias UIViewControllerType = UIHostingController<RegistrationView>
-    
     //MARK: - Methods
-    func makeUIViewController(context: Context) -> UIViewControllerType {
-        UIHostingController(rootView: RegistrationView())
+    func makeUIViewController(context: Context) -> UIViewController {
+        return UIHostingController(rootView: RegistrationView())
     }
     
-    func updateUIViewController(_ uiViewController: UIViewControllerType, context: Context) {
+    func updateUIViewController(_ uiViewController: UIViewController, context: Context) {
     }
 }
 
