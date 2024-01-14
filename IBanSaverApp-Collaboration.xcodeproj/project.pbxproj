@@ -16,6 +16,10 @@
 		158C61482B5300D8002B0594 /* IBAN.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158C61472B5300D8002B0594 /* IBAN.swift */; };
 		158C614A2B5300EC002B0594 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158C61492B5300EC002B0594 /* Person.swift */; };
 		158C614D2B5336F8002B0594 /* PersonDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158C614C2B5336F8002B0594 /* PersonDataSource.swift */; };
+		15AA41C52B533F3400191018 /* IBanListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AA41C42B533F3400191018 /* IBanListView.swift */; };
+		15AA41C72B53506500191018 /* IBanDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AA41C62B53506500191018 /* IBanDetailsView.swift */; };
+		15AA41C92B53508E00191018 /* IBanDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AA41C82B53508E00191018 /* IBanDetailsViewModel.swift */; };
+		15AA41CB2B5350CD00191018 /* IBanRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AA41CA2B5350CD00191018 /* IBanRow.swift */; };
 		98428F9B2B51446200040035 /* TitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98428F9A2B51446200040035 /* TitleView.swift */; };
 		98428F9D2B51448B00040035 /* UserAvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98428F9C2B51448B00040035 /* UserAvatarView.swift */; };
 		98428F9F2B5144BA00040035 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98428F9E2B5144BA00040035 /* ButtonView.swift */; };
@@ -43,6 +47,10 @@
 		158C61472B5300D8002B0594 /* IBAN.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IBAN.swift; sourceTree = "<group>"; };
 		158C61492B5300EC002B0594 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		158C614C2B5336F8002B0594 /* PersonDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDataSource.swift; sourceTree = "<group>"; };
+		15AA41C42B533F3400191018 /* IBanListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IBanListView.swift; sourceTree = "<group>"; };
+		15AA41C62B53506500191018 /* IBanDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IBanDetailsView.swift; sourceTree = "<group>"; };
+		15AA41C82B53508E00191018 /* IBanDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IBanDetailsViewModel.swift; sourceTree = "<group>"; };
+		15AA41CA2B5350CD00191018 /* IBanRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IBanRow.swift; sourceTree = "<group>"; };
 		98428F9A2B51446200040035 /* TitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleView.swift; sourceTree = "<group>"; };
 		98428F9C2B51448B00040035 /* UserAvatarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAvatarView.swift; sourceTree = "<group>"; };
 		98428F9E2B5144BA00040035 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
@@ -153,6 +161,8 @@
 		153B93632B4FC01C006D0F07 /* IBanList */ = {
 			isa = PBXGroup;
 			children = (
+				158C61502B533E9F002B0594 /* IBanListView */,
+				158C614E2B533E59002B0594 /* IBanDetailsView */,
 			);
 			path = IBanList;
 			sourceTree = "<group>";
@@ -204,6 +214,24 @@
 				158C614C2B5336F8002B0594 /* PersonDataSource.swift */,
 			);
 			path = DataSource;
+			sourceTree = "<group>";
+		};
+		158C614E2B533E59002B0594 /* IBanDetailsView */ = {
+			isa = PBXGroup;
+			children = (
+				15AA41C62B53506500191018 /* IBanDetailsView.swift */,
+				15AA41C82B53508E00191018 /* IBanDetailsViewModel.swift */,
+				15AA41CA2B5350CD00191018 /* IBanRow.swift */,
+			);
+			path = IBanDetailsView;
+			sourceTree = "<group>";
+		};
+		158C61502B533E9F002B0594 /* IBanListView */ = {
+			isa = PBXGroup;
+			children = (
+				15AA41C42B533F3400191018 /* IBanListView.swift */,
+			);
+			name = IBanListView;
 			sourceTree = "<group>";
 		};
 		98428F992B51425900040035 /* SmallComponents */ = {
@@ -333,12 +361,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				153B936D2B4FD28C006D0F07 /* LoginView.swift in Sources */,
+				15AA41C92B53508E00191018 /* IBanDetailsViewModel.swift in Sources */,
+				15AA41CB2B5350CD00191018 /* IBanRow.swift in Sources */,
 				153B93522B4FBF81006D0F07 /* IBanSaverApp_CollaborationApp.swift in Sources */,
 				B52B03FE2B50420B00BD5AD5 /* LoginViewModel.swift in Sources */,
 				98428FA32B51456100040035 /* TextFieldView.swift in Sources */,
+				15AA41C52B533F3400191018 /* IBanListView.swift in Sources */,
 				158C614D2B5336F8002B0594 /* PersonDataSource.swift in Sources */,
 				98428FA62B514F1600040035 /* RegistrationView.swift in Sources */,
 				158C61482B5300D8002B0594 /* IBAN.swift in Sources */,
+				15AA41C72B53506500191018 /* IBanDetailsView.swift in Sources */,
 				B52153BD2B51A2780008BF18 /* AuthenticationManager.swift in Sources */,
 				B52153BF2B51A3920008BF18 /* AuthDataResultModel.swift in Sources */,
 				98428F9F2B5144BA00040035 /* ButtonView.swift in Sources */,
