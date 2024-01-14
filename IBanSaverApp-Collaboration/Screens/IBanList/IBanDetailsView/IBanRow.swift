@@ -8,11 +8,13 @@
 import SwiftUI
 
 struct IBanRow: View {
+    // MARK: - Properties
     let iban: String
     let bank: String
     let deleteAction: () -> Void
     let shareAction: () -> Void
 
+    // MARK: - Body
     var body: some View {
         HStack {
             Text("\(bank): \(iban)")
@@ -21,14 +23,17 @@ struct IBanRow: View {
                 UIPasteboard.general.string = iban
             }) {
                 Image(systemName: "doc.on.doc")
+                    .foregroundStyle(AppColor.blue)
             }
             
             Button(action: shareAction) {
                 Image(systemName: "square.and.arrow.up")
+                    .foregroundStyle(AppColor.blue)
             }
             
             Button(action: deleteAction) {
                 Image(systemName: "trash")
+                    .foregroundStyle(AppColor.blue)
             }
         }
         .padding()

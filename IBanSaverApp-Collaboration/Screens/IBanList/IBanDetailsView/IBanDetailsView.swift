@@ -14,8 +14,8 @@ struct IBanDetailsView: View {
     @StateObject var viewModel: IBanDetailsViewModel
     @State var isSharing = false
     @State private var selectedIban: String? = nil
-
-
+    
+    
     //MARK: - init
     init(person: Person) {
         self.personToDisplay = person
@@ -38,11 +38,11 @@ struct IBanDetailsView: View {
                                 iban: iban,
                                 bank: bank,
                                 deleteAction: {
-                                viewModel.deleteIBan(IBan: iban, bank: bank)
+                                    viewModel.deleteIBan(IBan: iban, bank: bank)
                                 },
                                 shareAction: {
-                                isSharing = true
-                                selectedIban = iban
+                                    isSharing = true
+                                    selectedIban = iban
                                 }
                             )
                             
@@ -60,14 +60,14 @@ struct IBanDetailsView: View {
                 }
             }
         }
-
+        
     }
     
     //MARK: - Components
     private var addNewIbanButton: some View {
         //TODO: Add navigation to addNewIbanView
         Button(action: {
-
+            
         }) {
             Text("Add New IBan")
         }
@@ -78,12 +78,12 @@ struct IBanDetailsView: View {
 
 struct ActivityViewController: UIViewControllerRepresentable {
     var textToShare: String
-
+    
     func makeUIViewController(context: UIViewControllerRepresentableContext<ActivityViewController>) -> UIActivityViewController {
         let controller = UIActivityViewController(activityItems: [textToShare], applicationActivities: nil)
         return controller
     }
-
+    
     func updateUIViewController(_ uiViewController: UIActivityViewController, context: UIViewControllerRepresentableContext<ActivityViewController>) {}
 }
 

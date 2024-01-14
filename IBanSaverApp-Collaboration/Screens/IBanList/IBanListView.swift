@@ -11,12 +11,13 @@ struct IBanListView: View {
     //MARK: - Properties
     @StateObject var dataSource = PersonDataSource()
     @State private var searchText = ""
-
+    
     // MARK: - Body
     var body: some View {
         NavigationStack {
+            
             VStack {
-
+                
                 TextField("Search", text: $searchText)
                     .textFieldStyle(.roundedBorder)
                     .padding(.all, 10)
@@ -26,11 +27,7 @@ struct IBanListView: View {
                     ForEach(dataSource.getAllPerson().sorted { $0.name < $1.name }.filter { $0.name.contains(searchText) || searchText.isEmpty }, id: \.id) { person in
                         
                         Button(action: {
-                            let detailsView = IBanDetailsViewRepresentable(person: person)
-                            let hostingController = UIHostingController(rootView: detailsView)
-                            let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene
-                            let window = windowScene?.windows.first
-                            window?.rootViewController?.present(hostingController, animated: true, completion: nil)
+                            presentDetailsView(person: person)
                         }) {
                             Text(person.name)
                         }
@@ -39,7 +36,7 @@ struct IBanListView: View {
                     }
                 }
                 .listStyle(.plain)
-
+                
                 addPersonButton
                 
             }
@@ -47,12 +44,12 @@ struct IBanListView: View {
             
         }
     }
-
+    
     //MARK: - Components
     private var addPersonButton: some View {
         //TODO: Add navigation to AddPersonView
         Button(action: {
-           
+            
         }) {
             Text("Add New Person")
         }
@@ -60,6 +57,14 @@ struct IBanListView: View {
         .padding(.all, 10)
     }
     
+    //MARK: - Methods
+    func presentDetailsView(person: Person) {
+        let detailsView = IBanDetailsViewRepresentable(person: person)
+        let hostingController = UIHostingController(rootView: detailsView)
+        let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene
+        let window = windowScene?.windows.first
+        window?.rootViewController?.present(hostingController, animated: true, completion: nil)
+    }
 }
 
 
