@@ -10,7 +10,8 @@ import SwiftUI
 struct RegistrationView: View {
     // MARK: - Properties
     @StateObject var viewModel = RegistationViewModel()
-
+    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
+    
     
     // MARK: - Body
     var body: some View {
@@ -22,12 +23,14 @@ struct RegistrationView: View {
             setupButtonView
         }
         .padding()
-
+        
     }
     
     // MARK: - Components
     private var setupButtonView: some View {
-        ButtonView(title: "Register", action: viewModel.registration, buttonColor: (viewModel.isEmailValid && viewModel.isValid) ? AppColor.blue : AppColor.darkGray, viewModel: viewModel)
+        ButtonView(title: "Register", action: { viewModel.registration()
+                   self.presentationMode.wrappedValue.dismiss()
+                   }, buttonColor: (viewModel.isEmailValid && viewModel.isValid) ? AppColor.blue : AppColor.darkGray, viewModel: viewModel)
     }
 
     private var setupPasswordRestrictionsView: some View {
