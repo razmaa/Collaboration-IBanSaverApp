@@ -10,7 +10,8 @@ import SwiftUI
 struct RegistrationView: View {
     // MARK: - Properties
     @StateObject var viewModel = RegistationViewModel()
-    @State private var showingAlert = false
+    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
+    
     
     // MARK: - Body
     var body: some View {
@@ -22,18 +23,16 @@ struct RegistrationView: View {
             setupButtonView
         }
         .padding()
-        .alert(isPresented: $showingAlert) {
-            Alert(title: Text("Success"), message: Text("Registration went Successfully"), dismissButton: .default(Text("OK")))
-        }
+        
     }
     
     // MARK: - Components
     private var setupButtonView: some View {
         ButtonView(title: "Register", action: { viewModel.registration()
-            showingAlert = true
-        }, buttonColor: (viewModel.isEmailValid && viewModel.isValid) ? AppColor.blue : AppColor.darkGray, viewModel: viewModel)
+                   self.presentationMode.wrappedValue.dismiss()
+                   }, buttonColor: (viewModel.isEmailValid && viewModel.isValid) ? AppColor.blue : AppColor.darkGray, viewModel: viewModel)
     }
-    
+
     private var setupPasswordRestrictionsView: some View {
         PasswordRestrictionsView(
             viewModel: viewModel,
@@ -58,9 +57,6 @@ struct RegistrationView: View {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        RegistrationView()
-    }
+#Preview {
+    RegistrationView()
 }
-
